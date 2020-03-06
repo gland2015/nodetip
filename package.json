@@ -1,5 +1,24 @@
 {
+    "name": "nodetip",
+    "description": "node小工具集合",
+    "license": "MIT",
+    "version": "1.0.0",
+    "private": false,
+    "author": "gland2015",
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": [
+        "nodejs",
+        "javascript"
+    ],
     "dependencies": {
         "http-proxy": ""
+    },
+    "devDependencies": {},
+    "homepage": "https://github.com/gland2015/nodetip",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gland2015/nodetip.git"
     }
 }
