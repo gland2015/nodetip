@@ -1,3 +1,5 @@
+// nodejs代理实现代理 用法：node node_proxy
+
 const net = require("net");
 
 const server = net.createServer();

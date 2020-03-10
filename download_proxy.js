@@ -1,5 +1,5 @@
 // 代理已手动下载在本地的文件，以便于解决各种安装问题
-// 只需配置fileMap.json和信任证书即可，在文件目录启动
+// 只需配置fileMap.json和信任证书即可，并在文件目录启动。信任证书自动生成于home中，手动添加certs/ca.pem文件到浏览器证书信任根中心
 
 const Proxy = require("http-mitm-proxy");
 const send = require("send");
