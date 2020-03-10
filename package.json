@@ -2,7 +2,7 @@
     "name": "nodetip",
     "description": "node小工具集合",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "private": false,
     "author": "gland2015",
     "publishConfig": {
@@ -12,10 +12,19 @@
         "nodejs",
         "javascript"
     ],
-    "dependencies": {
-        "http-proxy": ""
+    "scripts": {
+        "start": "cross-env dir=asset node --inspect  ./download_proxy.js --dir asset"
     },
-    "devDependencies": {},
+    "bin": {
+        "nodetips": "bin/nodetips.js"
+    },
+    "dependencies": {
+        "send": "*",
+        "http-mitm-proxy": "*"
+    },
+    "devDependencies": {
+        "cross-env": "*"
+    },
     "homepage": "https://github.com/gland2015/nodetip",
     "repository": {
         "type": "git",
