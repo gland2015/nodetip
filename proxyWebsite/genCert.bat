@@ -1,0 +1,2 @@
+REM 生成192.168.1.60域的证书，有效期10年，应将生成的crt文件放到系统信任的根证书下。 chrome --高级--隐私和安全--证书管理
+openssl req -x509 -out crtFile.crt -keyout keyFile.key -newkey rsa:2048 -nodes -sha256  -subj '/CN=192.168.1.60' -extensions EXT -config ./config.cnf

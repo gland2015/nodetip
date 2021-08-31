@@ -1,0 +1,10 @@
+[dn]
+CN=192.168.1.60
+
+[req]
+distinguished_name = dn
+
+[EXT]
+subjectAltName=DNS:192.168.1.60
+keyUsage=digitalSignature
+extendedKeyUsage=serverAuth
